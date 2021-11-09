@@ -5,6 +5,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { AdminModule } from './admin/admin.module';
 import { ProjectsModule } from './projects/projects.module';
+import { CounselingModule } from './counseling/counseling.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { ProjectsModule } from './projects/projects.module';
     }),
     AdminModule,
     ProjectsModule,
+    CounselingModule,
   ],
   controllers: [AppController],
   providers: [AppService],
