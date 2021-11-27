@@ -6,6 +6,8 @@ import { join } from 'path';
 import { AdminModule } from './admin/admin.module';
 import { ProjectsModule } from './projects/projects.module';
 import { CounselingModule } from './counseling/counseling.module';
+import { FileModule } from './file/file.module';
+import { ImageModule } from './image/image.module';
 
 @Module({
   imports: [
@@ -16,6 +18,8 @@ import { CounselingModule } from './counseling/counseling.module';
     AdminModule,
     ProjectsModule,
     CounselingModule,
+    FileModule,
+    ImageModule,
   ],
   controllers: [AppController],
   providers: [AppService],
